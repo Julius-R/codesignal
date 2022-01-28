@@ -1,0 +1,12 @@
+/*
+Challenge:
+Given a year, return the century it is in. The first century spans from the year 1 up to and including the year 100, the second - from the year 101 up to and including the year 200, etc
+*/
+
+// My Solution
+function solution(year) {
+	let century = Math.floor(year / 100);
+	return year % 100 === 0 ? century : century + 1;
+}
+
+console.log(solution(2000));
